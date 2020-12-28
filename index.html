@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wraper">
+        <div class="form">
+            <form action="#" id="form" class="form_body" name="form">
+                <h1 class="form_title">Send data to mail</h1>
+                <div class="form_item">
+                    <label for="forName" class="form_label">Name*</label><input type="text" name="name"
+                        class="form_input _req" id="forName" />
+                </div>
+                <div class="form_item">
+                    <label for="forEmail" class="form_label">Email*:</label><input type="text" name="email"
+                        class="form_input _mail _req" id="forEmail" />
+                </div>
+                <div class="form_item">
+                    <div class="form_label">left or right hand</div>
+                    <div class="options">
+                        <div class="options_item">
+                            <input checked
+                                type="radio"
+                                name="hand"
+                                class="options_input"
+                                id="forRightHand"
+                                value="right" /><label for="forRightHand" class="options_label"><span> right
+                                    hand:</span> </label>
+                        </div>
+                        <div class="options_item">
+                            <input
+                                checked
+                                type="radio"
+                                name="hand"
+                                class="options_input"
+                                id="forLeftHand"
+                                value="left" /><label for="forLeftHand" class="options_label"><span>left
+                                    hand:</span></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_item">
+                    <labal for="forMessage" class="form_label">message</labal><textarea
+                        name="message"
+                        id="forMessage"
+                        class="form_input"></textarea>
+                </div>
+                <div class="form_item">
+                    <div class="form_label">Age:</div>
+                    <select class="select" name="age">
+                        <option value="from 18 to 25">young</option>
+                        <option value="from 25 to 45">old</option>
+                        <option value="from 45...">super star</option>
+                    </select>
+                </div>
+                <div class="form_item">
+                    <div class="form_label">add File:</div>
+                    <div class="file">
+                        <div class="file_item">
+                            <input
+                                id="imageE"
+                                accept=".jpg, .png, .gif"
+                                type="file"
+                                name="imageE"
+                                class="file_input" />
+                            <div class="file_button">choose</div>
+                            <div id="formPreview" class="file_preview"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_item">
+                    <div class="checkbox">
+                        <input type="checkbox" name="agreement" checked id="forAgreement"
+                            class="checkbox_input _req" /><label
+                            for="forAgreement"
+                            class="checkbox_label"><span> i agree... <a href="http://#">some cool doc....</a>
+                            </span></label>
+                    </div>
+                </div>
+                <button type="submit" class="form_button">send</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
